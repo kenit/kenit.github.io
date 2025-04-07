@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chia Hsiang Chiu - Resume</title>
+    <style>
+        /* Global styles */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+            --accent-color: #e74c3c;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: var(--dark-color);
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+        }
+        
+        /* Header section */
+        header {
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 20px;
+        }
+        
+        .name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        /* Summary section */
+        .summary {
+            background-color: var(--light-color);
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        
+        .summary h2 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        /* Section styling */
+        section {
+            margin-bottom: 30px;
+        }
+        
+        section h2 {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            padding-bottom: 5px;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 15px;
+        }
+        
+        /* Experience section */
+        .job {
+            margin-bottom: 25px;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .job-title {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--dark-color);
+        }
+        
+        .company {
+            font-weight: 600;
+        }
+        
+        .job-details {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+        
+        .job-description ul {
+            padding-left: 20px;
+        }
+        
+        .job-description li {
+            margin-bottom: 8px;
+        }
+        
+        /* Projects section */
+        .project {
+            margin-bottom: 20px;
+        }
+        
+        .project-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+        
+        .project-link {
+            color: var(--secondary-color);
+            text-decoration: none;
+            margin-bottom: 8px;
+            display: inline-block;
+        }
+        
+        .project-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* Skills section */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-category h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill-tag {
+            background-color: var(--light-color);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+        
+        /* Education section */
+        .education-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+        
+        .education-institution {
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+        
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .job-header, .job-details {
+                flex-direction: column;
+            }
+            
+            .skills {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="name">CHIA HSIANG, CHIU</div>
+            <div class="contact">
+                <div class="contact-item">
+                    <span>📱</span>
+                    <span>+81 07090999313</span>
+                </div>
+                <div class="contact-item">
+                    <span>✉️</span>
+                    <span>jiashiang@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <span>🔗</span>
+                    <a href="https://github.com/kenit" target="_blank">github.com/kenit</a>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>Tokyo, Japan</span>
+                </div>
+            </div>
+        </header>
+        
+        <div class="summary">
+            <h2>SUMMARY</h2>
+            <p>14 years of web development experience on E-commerce. Develop large scale projects using frameworks like Laravel, Magento, etc. Familiar with designing stable, flexible APIs and consuming APIs from third-party. Passionate about continuously learning interesting web technologies.</p>
+        </div>
+        
+        <section>
+            <h2>EXPERIENCE</h2>
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">DevOps Engineer</div>
+                    <div class="company">Rakuten Group</div>
+                </div>
+                <div class="job-details">
+                    <div class="job-duration">07/2023 - Present</div>
+                    <div class="job-location">Tokyo</div>
+                </div>
+                <div class="job-description">
+                    <p><em><b>Roles: </b>DevOps Lead and Scrum Master</em></p>
+                    <ul>
+                        <li>Led DevOps projects, including maintenance of Jenkins pipelines.</li>
+                        <li>Coordinated with the internal Infra Team to align on requirements and needs..</li>
+                        <li>Managed Kubernetes (K8s) cluster maintenance.</li>
+                        <li>Oversaw server decommissioning and updates.</li>
+                        <li>As Scrum Master, ensured team tasks stayed on track and aligned with project goals.</li>
+                        <li>Hosted daily morning meetings to facilitate team communication.</li>
+                        <li>Collaborated with QA to coordinate project testing.</li>
+                        <li>Assigned and managed task ownership among team members.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Assistant Manager</div>
+                    <div class="company">Wonderland Group</div>
+                </div>
+                <div class="job-details">
+                    <div class="job-duration">06/2021 - 05/2023</div>
+                    <div class="job-location">Taipei</div>
+                </div>
+                <div class="job-description">
+
+                    <ul>
+                        <li>Built up e-commerce platform in AWS from scratch, including infrastructure design and implementation, Magento, ERP integration, Payment integration, 3PL integration.</li>
+                        <li>Built up high availability environment by using Kubernetes cluster.</li>
+                        <li>Built up CI/CD pipeline by using Jenkins and Gitlab.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Sr. Assistant Manager</div>
+                    <div class="company">HTC</div>
+                </div>
+                <div class="job-details">
+                    <div class="job-duration">03/2017 - 06/2021</div>
+                    <div class="job-location">Taipei</div>
+                </div>
+                <div class="job-description">
+                    <p><em>Senior fullstack engineer</em></p>
+                    <ul>
+                        <li>E-commerce development and maintenance using Magento 1 and 2 platform.</li>
+                        <li>Integrate external services such as payment services, delivery, etc. into Magento solutions.</li>
+                        <li>Build EC related APIs using Serverless framework and Golang on AWS solutions.</li>
+                        <li>Build BI report using MS PowerBI and Analysis Service.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Senior Backend Engineer</div>
+                    <div class="company">Surehigh</div>
+                </div>
+                <div class="job-details">
+                    <div class="job-duration">12/2007 - 10/2016</div>
+                    <div class="job-location">Taipei</div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Lead a team of 4 back end developers, developing a system integrated with 10 global OTA (online travel agency) vendors such as Agoda, Booking.com, Expedia etc. to gather order information and dispatch real-time room inventory information of customer hotels.</li>
+                        <li>Online travel booking system development and maintenance.</li>
+                        <li>Migrate legacy system from 10 years old on-premises server farm to AWS.</li>
+                        <li>Introduce Laravel framework to progressively replace old legacy PHP code to improve flexibility, stability, and security of legacy system.</li>
+                        <li>Introduce Gitlab CI/CD into development flow to deal with variety of requirements from customers.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>PROJECTS</h2>
+            <div class="project">
+                <div class="project-title">Developer Hub</div>
+                <a href="https://hub.vive.com/" class="project-link" target="_blank">https://hub.vive.com/</a>
+                <p>A portal for VR developers or companies to register VR-related events and obtain development resources such as SDK, documentation, etc.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>SKILLS</h2>
+            <div class="skills">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">Golang</span>
+                        <span class="skill-tag">Javascript</span>
+                        <span class="skill-tag">Python</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">AWS DynamoDB</span>
+                        <span class="skill-tag">RabbitMQ</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Frameworks</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Laravel</span>
+                        <span class="skill-tag">Magento</span>
+                        <span class="skill-tag">Serverless</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">GIT</span>
+                        <span class="skill-tag">Linux</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>EDUCATION</h2>
+            <div class="education">
+                <div class="education-title">Bachelor of Mathematics</div>
+                <div class="education-institution">National Dong Hwa University</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
